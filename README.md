@@ -67,3 +67,37 @@ You must have the following [ProjectDiscovery](https://projectdiscovery.io/) too
    ```bash
    git clone [https://github.com/nylar357/1shot.git](https://github.com/nylar357/1shot.git)
    cd 1shot
+
+## 💻 Usage
+
+1. Run the script by providing a single target (Domain or IP).
+
+2. Run against a domain:
+
+```./1shot.sh example.com```
+
+3. Run against an IP address:
+
+```./1shot.sh 1.1.1.1```
+
+## 📂 Output Artifacts
+
+The script generates a summary report in the terminal and saves all raw data in the dynamically generated workspace folder (recon_<target>_<date>):
+
+    targets.txt: List of all identified subdomains or IPs.
+
+    open_ports.txt: List of assets with active open ports.
+
+    web_assets.json: Full technical fingerprinting of web services.
+
+    live_urls.txt: Parsed list of live HTTP/HTTPS URLs.
+
+    crawled_endpoints.txt: A comprehensive list of URLs found via spidering.
+
+    final_scan_list.txt: Combined list of base URLs and crawled endpoints.
+
+    vulnerabilities.json: Identified security flaws categorized by severity.
+
+## ⚖️ Disclaimer
+
+This script is intended for authorized security testing, educational, and research purposes only. Always ensure you have explicit permission before scanning any infrastructure that you do not own or operate. The authors are not responsible for any misuse or damage caused by this tool.
