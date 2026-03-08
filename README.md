@@ -65,5 +65,5 @@ You must have the following [ProjectDiscovery](https://projectdiscovery.io/) too
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/1shot.git](https://github.com/yourusername/1shot.git)
+   git clone [https://github.com/nylar357/1shot.git](https://github.com/nylar357/1shot.git)
    cd 1shot
