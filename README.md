@@ -1,5 +1,7 @@
 # 1shot.sh: Automated Reconnaissance Framework
 
+![preview](img/headshot.png)
+
 ![Bash](https://img.shields.io/badge/Language-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 ![ProjectDiscovery](https://img.shields.io/badge/Powered%20By-ProjectDiscovery-0080FF?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
