@@ -61,11 +61,11 @@ katana -list live_urls.txt -jc -kf all -silent -o crawled_endpoints.txt
 cat live_urls.txt crawled_endpoints.txt | sort -u > final_scan_list.txt
 
 # 5. Vulnerability Scanning (Nuclei)
-echo "[+] Running Nuclei (Vulnerability Scan)..."
-nuclei -l final_scan_list.txt \
+echo "[+] Running Nuclei (Vulnerability Scan -- Also FIXED!)..."
+nuclei -l live_urls.txt \
     -severity low,medium,high,critical \
-    -silent \
-    -json -o vulnerabilities.json
+    -etags fuzz,dast,sqli,xss,bruteforce \
+    -stats -je vulnerabilities.json
 
 # 6. Reporting
 echo "-------------------------------------------------------"
